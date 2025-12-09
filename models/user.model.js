@@ -22,6 +22,9 @@ let userSchema = new mongoose.Schema({
     enum: ["Mau", "Lucknow", "Noida"],
     required: true,
   },
+  profile_pic: {
+    type: String,
+  },
 });
 
 let User = mongoose.model("User", userSchema);
